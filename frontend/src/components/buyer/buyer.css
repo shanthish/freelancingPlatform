@@ -1,0 +1,94 @@
+.success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91vh;
+}
+
+.buyer-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    border-bottom: 2px solid black;
+}
+.nav-button{
+    display: flex;
+    gap: 1rem;
+}
+
+.buyer-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.buyer-card{
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 15px;
+    background-color: white;
+    cursor: pointer;
+    border: 2px transparent solid;
+    transition-duration: 0.7s;
+}
+.buyer-card:hover {
+    background-color: #FA6827;
+    color: white;
+    scale: 1.01;
+    box-shadow: 0px 2px 3px black;
+}
+
+.buyer-card:hover button {
+    background-color: white;
+    color: #FA6827;
+    box-shadow: 0px 2px 3px black;
+}
+
+.buyer-card p {
+    margin: 0;
+    padding: 0;
+}
+
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+
+.card-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.buyer-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.eligibility-list {
+    padding-left: 20px;
+    font-size: 0.9rem;
+}
+
+.eligibility-list li {
+    margin: 4px 0;
+}
+
+.eligibility-list strong {
+    font-weight: bold;
+}
+
