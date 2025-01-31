@@ -21,7 +21,7 @@ const Signup = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-       var req=await axios.post('http://localhost:8080/signup',formData);
+       var req=await axios.post('https://freelancing-platform-f010.onrender.com/signup',formData);
        if(req.data.message){
         alert("SignUp Successful");
         if(req.data.new_user.user=='buyer'){

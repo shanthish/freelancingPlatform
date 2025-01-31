@@ -10,7 +10,7 @@ const Buyer=()=>{
     var buyer_data=location.state;
     console.log(buyer_data);
     useEffect(()=>{
-        axios.get(`http://localhost:8080/buyer-get-gig`)
+        axios.get(`https://freelancing-platform-f010.onrender.com/buyer-get-gig`)
         .then((res)=>{setGigs(res.data.data);console.log(res.data)})
         .catch((err)=>{console.log(err);})
     },[])
