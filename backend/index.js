@@ -74,7 +74,7 @@ app.post('/add-gig',async (req,res)=>{
     }
     catch(err){
         console.log(err);
-        res.json({message:false});
+        res.status(400).json({message:false});
     }          
 })
 
