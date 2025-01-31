@@ -67,8 +67,8 @@ app.post('/add-gig',async (req,res)=>{
             revision,
             features,
         });
-        // let user_data=await User.findById('679be1faf732dfa38448cbb8');
-        // new_gig.seller_id.push(user_data._id);
+        let user_data=await User.findById('679be1faf732dfa38448cbb8');
+        new_gig.seller_id.push(user_data._id);
         await new_gig.save();
         res.status(200).json({data:user_data,message:true});
     }
