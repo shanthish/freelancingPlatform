@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const SellerCard=({id,title,description,price,features,delivery_date,})=>{
+const SellerCard=({id,title,description,price,features,delivery_date})=>{
     const navigate=useNavigate();
 
 
@@ -43,7 +43,7 @@ const SellerCard=({id,title,description,price,features,delivery_date,})=>{
                                     &nbsp;&nbsp;{price}INR amount
                                 </p>
                                 {/* {revisions} */}
-                                <p><b>Eligibility:</b></p>
+                                <p><b>Features:</b></p>
                                 <ul className="eligibility-list">
                                     {
                                         mock_features.map((feature,index)=>(

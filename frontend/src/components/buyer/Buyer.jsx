@@ -3,7 +3,7 @@ import BuyerCards from "./BuyerCards";
 import './buyer.css'
 import { useEffect, useState } from "react";
 import axios from "axios";
-import BuyerNavbar from "./Buyernavbar";
+import BuyerNavbar from "./BuyerNavbar";
 const Buyer=()=>{
     const location=useLocation();
     var[gigs,setGigs]=useState([]);

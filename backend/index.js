@@ -45,10 +45,12 @@ app.post('/signup', async (req, res) => {
 app.post('/login', async (req, res) => {
     let { email, password } = req.body;
     let check = await User.find({ email: email, password: password });
+    console.log("hello")
     if (!check.length) {
         res.json({ message: false })
     } else {
         res.status(200).json({ data: check[0], message: true });
+     
     }
 });
 
@@ -65,7 +67,7 @@ app.post('/add-gig',async (req,res)=>{
             revision,
             features,
         });
-        let user_data=await User.findById('679be099f732dfa38448cbad');
+        let user_data=await User.findById('679bb5d34fe72b4c5e3ea2b7');
         new_gig.seller_id.push(user_data._id);
         await new_gig.save();
         res.status(200).json({data:user_data,message:true});

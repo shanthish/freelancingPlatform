@@ -2,11 +2,13 @@ import SellerCard from "./SellerCard";
 
 // import Sellercard
 const SellerCards=({gig_details,})=>{
+    console.log("haiii")
     return (
         <div className="seller-cards">
            {
-            gig_details.map((gig)=>(<SellerCard 
-                title={gig.title} 
+            gig_details.map((gig,index)=>(<SellerCard 
+                key={index}
+            title={gig.title} 
             description={gig.description}
             price={gig.price}
             features={gig.features}
