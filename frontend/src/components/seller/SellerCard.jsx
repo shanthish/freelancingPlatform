@@ -17,7 +17,7 @@ const SellerCard=({id,title,description,price,features,delivery_date})=>{
    
 
     let handleDelete=()=>{
-        axios.get(`http://localhost:8080/delete-gig/${id}`)
+        axios.get(`https://freelancing-platform-f010.onrender.com/delete-gig/${id}`)
         .then((res)=>{
             if(res.data.message){
                 
