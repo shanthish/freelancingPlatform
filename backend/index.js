@@ -69,9 +69,9 @@ app.post('/add-gig',async (req,res)=>{
         });
         
         let user_data=await User.findById('679be1faf732dfa38448cbb8');
-        if(!user_data){
-            res.send.message("no user found")
-        }
+        // if(!user_data){
+        //     res.send.message("no user found")
+        // }
         new_gig.seller_id.push(user_data._id);
         await new_gig.save();
         res.status(200).json({data:user_data,message:true});
