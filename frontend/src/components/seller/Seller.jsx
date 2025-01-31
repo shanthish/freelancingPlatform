@@ -16,7 +16,7 @@ const Seller=()=>{
     // },[])
     useEffect(() => {
         if (seller_data && seller_data._id) {
-            axios.get(`http://localhost:8080/seller-get-gig/${seller_data._id}`)
+            axios.get(`https://freelancing-platform-f010.onrender.com/seller-get-gig/${seller_data._id}`)
             .then((res) => setGigs(res.data))
             .catch((err) => { console.log(err); });
         } else {

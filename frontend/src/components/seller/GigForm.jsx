@@ -34,7 +34,7 @@ const GigForm = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    let req=await axios.post('http://localhost:8080/add-gig',gig);
+    let req=await axios.post('https://freelancing-platform-f010.onrender.com/add-gig',gig);
     if(req.data.message){
       alert("Gig Added Successfully");
       navigate('/seller',{state:req.data.data});
