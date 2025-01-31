@@ -21,7 +21,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8080/login", formData);
+            const response = await axios.post("https://freelancing-platform-f010.onrender.com/login", formData);
             console.log(response);
             if (!response.data.message) {
                 alert("User Doesn't Exist ,Try Signing Up");
